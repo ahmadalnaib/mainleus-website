@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #4faf98;
+  --secondary-color: #393796;
+  --dark-color:#333;
+  --light-color:#f4f4f4;
+  --max-width:1100px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  background: var(--light-color);
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Staatliches', cursive;
+}
+
+img {
+  width: 100%;
+}
+
+ .social title {
+  background: #4faf98;
+}
+
+/* NAVBAR */
+
+#navbar {
+  background: #fff;
+  color: #333;
+}
+
+#navbar .logo {
+  width: 100px;
+}
+
+#navbar {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem; 
+  overflow: hidden;
+}
+
+#navbar .container {
+  display: grid;
+  grid-template-columns: 6fr 3fr 2fr;
+  padding: 1rem;
+  align-items: center;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  padding: 0.75rem;
+  font: bold;
+  color: #333;
+}
+
+#navbar ul{
+  display: flex;
+  justify-self: flex-end;
+  list-style: none;
+}
+
+#navbar ul li a.current{
+  background: var(--primary-color);
+}
+
+#navbar ul li a:hover{
+  background: var(--light-color);
+}
+
+#navbar .social {
+  justify-self: center;
+}
+
+#navbar .social i {
+  color: #777;
+  margin: 0.5rem;
+}
+
+#navbar .social i:hover {
+  color: #4faf98;
+}
+
+
+/* showcase */
+
+#showcase {
+ background: #333;
+ color: #Fff;
+ padding: 2rem;
+ position: relative;
+}
+
+#showcase::before {
+  content: ' ';
+  background: url('../img/mainleus.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+
+}
+
+.showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.showcase-content {
+  z-index: 1;
+}
+
+.category{
+  display: inline-block;
+  color: #Fff;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius:15px;
+  margin-bottom: 0.5rem;
+
+}
+
+.cat-sport {
+  background: chocolate;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #333;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  background: #4faf98;
+}
+
+
+
+#showcase .showcase-content p {
+  margin-bottom: 1rem;
+}
+
+
+
+
+/* arcical */
+
+#art-home {
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  
+  
+}
+
+
+
+
+#art-home .art-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+
+.card img {
+ height: 350px;
+  
+}
+
+.card a {
+  text-decoration: none;
+  color: #4faf98;
+  
+}
+
+.card a:hover {
+  border-bottom: 1px solid #393796 ;
+}
+
+.card  p {
+  color:#777;
+  text-align: justify;
+}
+
+
+/* footer */
+
+#main-footer {
+  background: #4faf98;
+  color: #fff;
+}
+
+footer img {
+  width: 100px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  padding: 1rem;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+footer input {
+  padding: 0.50rem;
+}
+
+ul.list {
+  list-style: none;
+}
+
+.list a {
+  color: #333;
+  text-decoration: none;
+}
+
+
+/* about */
+
+#about {
+  margin: 2rem;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  grid-gap: 1rem;
+}
+
+.page-container .ato {
+  grid-row: 1/span 4;
+}
+
+aside .btn:hover {
+ color: #fff;
+}
+
+
+/* article */
+#article {
+  margin: 1rem;
+}
